@@ -1,0 +1,26 @@
+package Pattern;
+
+import java.util.Scanner;
+public class P4 {
+	
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int sum=n;
+		int flag=(n*2)+1;
+		for(int i=1;i<=n;i++)
+		{
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print(" ");
+			}
+			flag-=2;
+			for(int j=1;j<=flag;j++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+}
